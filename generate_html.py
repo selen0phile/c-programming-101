@@ -11,7 +11,7 @@ folder_path = './'
 
 # Get all files in the folder and subfolders with absolute paths
 files = get_all_files(folder_path)
-files.sort(key=os.path.getmtime)
+files.sort(key=os.path.getmtime,reverse=True)
 
 html = open('index.html','w')
 html.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><body style="background-color:black !important;">\n<center>\n')
